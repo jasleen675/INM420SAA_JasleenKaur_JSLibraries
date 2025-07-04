@@ -73,15 +73,27 @@ body {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: url('../images/hero\ mage.jpg') center/cover no-repeat;
+  background: url('../images/pexels-souvenirpixels-414612.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0 2rem;
 }
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); /* 50% black overlay */
+  z-index: 0;
+}
 
 .hero-content h2 {
+  position: relative;
+  z-index: 2;
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -89,12 +101,16 @@ body {
 }
 
 .hero-content p {
+  position: relative;
+  z-index: 2;
   font-size: 1.2rem;
   margin-bottom: 2rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-btn {
+  position: relative;
+  z-index: 2;
   background-color: #ffffff;
   color: #000;
   padding: 0.8rem 2rem;
@@ -105,7 +121,7 @@ body {
 }
 
 .hero-btn:hover {
-  background-color: #ffcc00;
+  background-color:   #00bfa6;
   color: #000;
 }
 
@@ -142,12 +158,12 @@ body {
 .glide__slide h3 {
   font-size: 1.2rem;
   margin: 1rem 0;
-  color: #ffcc00;
+  color:  #eefffd;
   font-family: 'Inter', sans-serif;
 }
 
 .glide__arrows button {
-  background: #ffcc00;
+  background:  #00bfa6;
   color: #000;
   font-size: 1.5rem;
   border: none;
@@ -212,7 +228,7 @@ body {
 
 .highlight-card h3 {
   margin-top: 1rem;
-  color: #ffcc00;
+  color:  #00bfa6;
   font-family: 'Inter', sans-serif;
   font-size: 1.25rem;
 }
@@ -255,7 +271,7 @@ body {
 
 .form-group input:focus,
 .form-group select:focus {
-  outline: 2px solid #ffcc00;
+  outline: 2px solid  #00bfa6;
   background: #2a2a2a;
 }
 
@@ -278,7 +294,7 @@ body {
 
 .footer-brand h2 {
   font-family: 'Playfair Display', serif;
-  color: #ffcc00;
+  color:  #00bfa6;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -302,7 +318,7 @@ body {
 }
 
 .footer-nav a:hover {
-  color: #ffcc00;
+  color:  #00bfa6;
 }
 
 .footer-social a {
@@ -313,7 +329,7 @@ body {
 }
 
 .footer-social a:hover {
-  color: #ffcc00;
+  color:  #00bfa6;
 }
 
 .footer-bottom {
