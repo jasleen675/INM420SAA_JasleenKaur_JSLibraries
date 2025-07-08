@@ -44,10 +44,9 @@ AOS.init({
   // Format phone input with Cleave.js
   new Cleave('#phone', {
     phone: true,
-    phoneRegionCode: 'US' // or change to 'CA', 'IN', etc.
+    phoneRegionCode: 'CA' 
   });
 
-  // Optional: Parsley validation feedback (can be styled if needed)
   document.getElementById('bookingForm').addEventListener('submit', function (e) {
     if (!this.checkValidity()) {
       e.preventDefault();
