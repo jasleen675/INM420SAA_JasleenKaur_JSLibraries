@@ -161,6 +161,9 @@ body {
   color:  #eefffd;
   font-family: 'Inter', sans-serif;
 }
+.glide__arrows {
+  margin-top: 20px; 
+}
 
 .glide__arrows button {
   background:  #00bfa6;
@@ -228,6 +231,7 @@ body {
 
 .highlight-card h3 {
   margin-top: 1rem;
+  margin-bottom: 0.6rem;
   color:  #00bfa6;
   font-family: 'Inter', sans-serif;
   font-size: 1.25rem;
