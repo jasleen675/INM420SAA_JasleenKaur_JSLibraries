@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 AOS.init({
     duration: 800,
-    once: true
+    once: false
   });
 
   // Format phone input with Cleave.js
